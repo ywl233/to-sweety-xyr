@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
     <head>
         <meta charset="utf-8" />
@@ -18,24 +18,9 @@
                     <div class="pageTitle center">Let me take you <a href="/">HOME</a></div>
                     <div class="poem">
                         <p>
-                            笑问迷路的你<br />
-                            今日可否如意<br />
-                            然则何故至此<br />
-                            冤家路窄是你
+                        404辣，别瞅辣，啥也没辣
                         </p>
-                        <p>
-                            筚路蓝缕如你<br />
-                            今生会否得意<br />
-                            生前身后名利<br />
-                            痴儿不悟是你
-                        </p>
-                        <p>
-                            耗尽百年运气<br />
-                            今朝邂逅与你<br />
-                            唯有丹心遥寄<br />
-                            头也不回是你
-                        </p>
-                        <p><a href="/" class="button">回头是岸</a></p>
+                        <p><a href="/" class="button">。。</a></p>
                     </div>
                 </div>
                 <div class="rotLeft rotBottom pageBack"></div>
@@ -56,5 +41,34 @@
         <![endif]-->
         <script type="text/javascript" src="http://zhangwenli.com/blog/js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script>
+		 var timeOutEvent=0;
+		 $(function(){
+		     $("#touchArea").on({
+		         touchstart: function(e){
+		             timeOutEvent = setTimeout("longPress()",500);
+		              e.preventDefault();
+		         },
+		         touchmove: function(){
+		                     clearTimeout(timeOutEvent); 
+		                 timeOutEvent = 0; 
+		         },
+		         touchend: function(){
+		                clearTimeout(timeOutEvent);
+		             if(timeOutEvent!=0){ 
+		                 alert("你这是点击，不是长按"); 
+		             } 
+		             return false; 
+		         }
+		     })
+		 });
+		 
+		  
+		 function longPress(){ 
+		     timeOutEvent = 0; 
+		     alert("长按事件触发发"); 
+		 } 
+		 
+		 </script>
     </body>
 </html>

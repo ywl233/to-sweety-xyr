@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=100%, initial-scale=1">
-        <!-- <title>XYR&YWL/A love letter</title> -->
-		<title>邢依冉宝贝圣诞节快乐!</title>
-       <!-- <link href="css/main.min.css" rel="stylesheet" type="text/css">
-		<link rel="import" href="Christmastree.html" id="page"/>
-        <link rel="Shortcut Icon" href="favicon.png"/>
-		<link rel="preload" href="img/newfiles.png" as="image">
-		<link rel="preload" href="img/apologize.gif" as="image">
-		<link rel="preload" href="img/mylove.jpg" as="image">
-		<link rel="preload" href="img/paragraph1.jpg" as="image">
-		<link rel="preload" href="img/paragraph2.jpg" as="image">
-		<link rel="preload" href="img/putuphands.jpg" as="image">
-		<link rel="preload" href="img/readnotreply.jpg" as="image">
-		<link rel="preload" href="img/sosad.jpg" as="image"> -->
-		<!-- 圣诞树样式 -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>邢依冉同学圣诞节快乐！</title>
 		<style>
 			body {
 				background-color: #151522;
@@ -25,7 +13,7 @@
 				align-items: center;
 				justify-content: center;
 			}
-		
+
 			body,
 			html {
 				height: 100%;
@@ -33,16 +21,16 @@
 				margin: 0;
 				padding: 0;
 			}
-		
+
 			svg {
 				width: 90%;
 				height: 90%;
 				visibility: hidden;
 			}
 		</style>
-    </head>
-    <body>
-		<!-- 圣诞树代码 -->
+	</head>
+	<body>
+		
 		<svg class="mainSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			viewBox="0 0 800 600">
 			<defs>
@@ -52,8 +40,8 @@
 				<polygon id="cross" class="particle"
 					points="4,3.5 2.5,2 4,0.5 3.5,0 2,1.5 0.5,0 0,0.5 1.5,2 0,3.5 0.5,4 2,2.5 3.5,4 " />
 				<path id="heart" class="particle" d="M2.9,0C2.53,0,2.2,0.18,2,0.47C1.8,0.18,1.47,0,1.1,0C0.49,0,0,0.49,0,1.1
-		    C0,2.6,1.56,4,2,4s2-1.4,2-2.9C4,0.49,3.51,0,2.9,0z" />
-		
+            C0,2.6,1.56,4,2,4s2-1.4,2-2.9C4,0.49,3.51,0,2.9,0z" />
+
 				<radialGradient id="grad" cx="3" cy="3" r="6" gradientUnits="userSpaceOnUse">
 					<stop offset="0" style="stop-color: red" />
 					<stop offset="0.4" style="stop-color: #334673" />
@@ -66,12 +54,12 @@
 					<stop offset="0.1" style="stop-color: #0867c7; stop-opacity: 0.6" />
 					<stop offset="1" style="stop-color: #081029; stop-opacity: 0" />
 				</radialGradient>
-		
+
 				<mask id="treePathMask">
 					<path class="treePathMask" fill="none" stroke-width="18" stroke="#FFF" d="M252.9,447.9c0,0-30.8-21.6,33.9-44.7c64.7-23.1,46.2-37,33.9-41.6
-		    c-12.3-4.6-59.3-11.6-42.4-28.5s114-52.4,81.7-66.2c-32.4-13.9-58.5-10.8-35.4-29.3s66.2-101.7,70.9-115.6
-		    c4.4-13.2,16.9-18.5,24.7,0c7.7,18.5,44.7,100.1,67.8,115.6c23.1,15.4-10.8,21.6-26.2,24.7c-15.4,3.1-20,33.9,33.9,49.3
-		    c53.9,15.4,47.8,40.1,27.7,44.7c-20,4.6-63.2,4.6-27.7,32.4s98.6,21.6,61.6,60.1" />
+            c-12.3-4.6-59.3-11.6-42.4-28.5s114-52.4,81.7-66.2c-32.4-13.9-58.5-10.8-35.4-29.3s66.2-101.7,70.9-115.6
+            c4.4-13.2,16.9-18.5,24.7,0c7.7,18.5,44.7,100.1,67.8,115.6c23.1,15.4-10.8,21.6-26.2,24.7c-15.4,3.1-20,33.9,33.9,49.3
+            c53.9,15.4,47.8,40.1,27.7,44.7c-20,4.6-63.2,4.6-27.7,32.4s98.6,21.6,61.6,60.1" />
 				</mask>
 				<mask id="treeBottomMask">
 					<path class="treeBottomMask" stroke="#FFF" stroke-width="8"
@@ -81,24 +69,24 @@
 					<path class="treePotMask" stroke="#FFF" stroke-width="8"
 						d="M374.3,502.5c0,0-4.6,20,7.7,29.3c12.3,9.2,40.1,7.7,50.8,0s10.8-23.1,10.8-29.3" />
 				</mask>
-		
+
 				<filter id="glow" x="-150%" y="-150%" width="280%" height="280%">
 					<feOffset result="offOut" in="SourceGraphic" dx="0" dy="0" />
 					<feGaussianBlur in="offOut" stdDeviation="16" result="blur" />
-		
+
 					<feComponentTransfer>
 						<feFuncR type="discrete" tableValues="0.8" />
 						<feFuncG type="discrete" tableValues="0.3" />
 						<feFuncB type="discrete" tableValues="0.2" />
 						<!--<feFuncA type="linear" slope="1" intercept="0" />-->
 					</feComponentTransfer>
-		
+
 					<feComposite in="SourceGraphic" operator="over" />
 				</filter>
 			</defs>
 			<g class="whole">
 				<g class="pContainer"></g>
-		
+
 				<g class="tree" mask="url(#treePathMask)">
 					<path
 						d="M252.95,447.85a20.43,20.43,0,0,1-5.64-6.24,14,14,0,0,1-1.91-8.22,16.93,16.93,0,0,1,3.06-8,33.16,33.16,0,0,1,5.79-6.28A74.78,74.78,0,0,1,268.54,410a163.48,163.48,0,0,1,15.52-6.84c10.54-3.93,21-8.07,30.72-13.46a80.83,80.83,0,0,0,7-4.37,37.51,37.51,0,0,0,6.13-5.24c1.75-1.92,3.14-4.18,3.25-6.35s-1.12-4.18-3-5.81a25,25,0,0,0-6.72-3.91,61.25,61.25,0,0,0-7.8-2.42c-5.41-1.4-10.91-2.72-16.38-4.32a84.17,84.17,0,0,1-16.2-6.19,28.26,28.26,0,0,1-3.86-2.5,15.06,15.06,0,0,1-3.44-3.63,9,9,0,0,1-1.51-5.47,10.22,10.22,0,0,1,.61-2.78,12.88,12.88,0,0,1,1.2-2.34,26.73,26.73,0,0,1,6.58-6.56c2.35-1.76,4.76-3.33,7.19-4.84,4.87-3,9.82-5.75,14.77-8.46,9.91-5.4,19.88-10.59,29.63-16.08,4.87-2.75,9.68-5.56,14.33-8.56A81.88,81.88,0,0,0,359.45,280a23,23,0,0,0,2.41-2.79,8.36,8.36,0,0,0,1.35-2.65,2.13,2.13,0,0,0-.17-1.7,5.53,5.53,0,0,0-1.88-1.77,13.15,13.15,0,0,0-1.49-.83c-.52-.26-1.1-.49-1.76-.77-1.27-.53-2.55-1-3.83-1.53q-3.86-1.48-7.8-2.77c-5.26-1.74-10.6-3.23-16-4.79-2.72-.79-5.47-1.58-8.29-2.61a31.74,31.74,0,0,1-4.33-1.92,14.39,14.39,0,0,1-2.29-1.53,8.74,8.74,0,0,1-2.22-2.66,7.2,7.2,0,0,1-.78-4,9.09,9.09,0,0,1,1-3.24,18.93,18.93,0,0,1,3-4.21,44.88,44.88,0,0,1,3.29-3.19c.56-.5,1.12-1,1.68-1.45l1.61-1.33a84,84,0,0,0,10.88-11.88,326.2,326.2,0,0,0,18.79-27.53c5.88-9.5,11.48-19.19,16.89-29S380.1,146.16,385,136.13c1.22-2.51,2.42-5,3.57-7.54s2.29-5.09,3.14-7.45l.36-1c.14-.38.26-.75.42-1.12.29-.75.64-1.48,1-2.21a25.51,25.51,0,0,1,2.65-4.21,19.15,19.15,0,0,1,3.76-3.69,13.74,13.74,0,0,1,5.24-2.42,12.11,12.11,0,0,1,6.12.25,14.59,14.59,0,0,1,5,2.79,20.59,20.59,0,0,1,3.47,3.79,30.33,30.33,0,0,1,2.5,4.1c.35.7.7,1.39,1,2.1l.46,1.05.4,1,1.64,3.84,3.39,7.67q6.88,15.32,14.36,30.37c5,10,10.18,19.94,15.69,29.65a274.94,274.94,0,0,0,17.9,28A73.36,73.36,0,0,0,487.74,233c.49.4,1,.8,1.48,1.15l1.7,1.19a35,35,0,0,1,3.66,3,17.84,17.84,0,0,1,3.32,4.08,10.83,10.83,0,0,1,1.14,2.94,8.54,8.54,0,0,1,0,3.54,10.27,10.27,0,0,1-3.22,5.39,20.71,20.71,0,0,1-4.15,2.91,49,49,0,0,1-8.4,3.46,154,154,0,0,1-16.77,4.09l-4.15.81a9.18,9.18,0,0,0-2.87,1.08,9.51,9.51,0,0,0-4,4.7,12.55,12.55,0,0,0-.67,6.58,19.5,19.5,0,0,0,2.46,6.74A37.19,37.19,0,0,0,468,295.75a75,75,0,0,0,14.14,7.86,129.67,129.67,0,0,0,15.58,5.49A141.4,141.4,0,0,1,513.88,315a75,75,0,0,1,15.19,8.65,37.29,37.29,0,0,1,6.55,6.24,21.05,21.05,0,0,1,4.31,8.49,14.43,14.43,0,0,1-1.24,9.88,18.08,18.08,0,0,1-6.66,6.94,26.74,26.74,0,0,1-8.56,3.33c-2.84.61-5.65,1.06-8.44,1.49-5.58.86-11.13,1.61-16.52,2.77a53.48,53.48,0,0,0-7.81,2.22c-2.43.94-4.81,2.22-6,3.93a4.34,4.34,0,0,0-.77,2.82,8.45,8.45,0,0,0,1,3.29,28,28,0,0,0,4.82,6.25,80.74,80.74,0,0,0,12.81,10.4c9.29,6,19.72,10.29,30.24,14.17,5.27,1.95,10.59,3.79,15.85,5.86,2.63,1,5.24,2.14,7.79,3.39a37.94,37.94,0,0,1,7.28,4.51,11.9,11.9,0,0,1,3.63,15.57,34.68,34.68,0,0,1-4.53,7.16,77.45,77.45,0,0,1-5.64,6.29,77.31,77.31,0,0,0,5.41-6.46,34.27,34.27,0,0,0,4.22-7.21,12.64,12.64,0,0,0,.88-8,12.44,12.44,0,0,0-4.71-6.43,37.71,37.71,0,0,0-7.15-4.16c-2.53-1.16-5.13-2.18-7.76-3.14-5.26-1.91-10.62-3.62-16-5.44-10.65-3.63-21.34-7.64-31.11-13.64a83.84,83.84,0,0,1-13.61-10.49,31.27,31.27,0,0,1-5.6-6.94,12,12,0,0,1-1.55-4.68,8.17,8.17,0,0,1,.19-2.7,8.56,8.56,0,0,1,1.09-2.5,12.1,12.1,0,0,1,3.6-3.44,24.27,24.27,0,0,1,4.08-2.08,57.3,57.3,0,0,1,8.36-2.56c5.59-1.31,11.19-2.17,16.71-3.12,2.76-.48,5.5-1,8.15-1.59a22.1,22.1,0,0,0,7-2.87,13.3,13.3,0,0,0,4.82-5.15,9.42,9.42,0,0,0,.69-6.53,16,16,0,0,0-3.42-6.33,33.25,33.25,0,0,0-5.73-5.27,69.74,69.74,0,0,0-14.19-7.8,135.81,135.81,0,0,0-15.61-5.42,135.53,135.53,0,0,1-16.3-5.51,81,81,0,0,1-15.41-8.31,43.39,43.39,0,0,1-12.6-13,25.53,25.53,0,0,1-3.34-9,19.13,19.13,0,0,1,1-10,16.17,16.17,0,0,1,6.69-8,15.88,15.88,0,0,1,5-1.93l4.13-.84a147.75,147.75,0,0,0,16-4,42.41,42.41,0,0,0,7.17-3,14,14,0,0,0,2.74-1.92,3.42,3.42,0,0,0,1.12-1.68,2.41,2.41,0,0,0-.43-1.61,11.07,11.07,0,0,0-2-2.4,28,28,0,0,0-2.92-2.31l-1.76-1.22c-.65-.46-1.26-.94-1.86-1.43a59,59,0,0,1-6.43-6.27c-2-2.19-3.79-4.44-5.54-6.74a267,267,0,0,1-18.55-28.74c-5.63-9.85-10.89-19.86-16-30s-9.91-20.31-14.57-30.61l-3.45-7.76L417,124.48l-.42-1-.39-.88c-.25-.59-.54-1.15-.82-1.71a22.74,22.74,0,0,0-1.89-3.09,13,13,0,0,0-2.2-2.42,7,7,0,0,0-2.31-1.33,4.49,4.49,0,0,0-2.22-.09,8.55,8.55,0,0,0-4.59,3.32,17.85,17.85,0,0,0-1.84,2.92c-.26.54-.51,1.07-.73,1.64-.12.27-.22.56-.32.85l-.35,1c-1.06,2.93-2.23,5.47-3.42,8.1s-2.42,5.16-3.67,7.7c-5,10.18-10.29,20.16-15.77,30.05s-11.17,19.66-17.16,29.28a310.2,310.2,0,0,1-19.39,28.11,90.46,90.46,0,0,1-12,12.85l-1.65,1.35c-.52.43-1,.85-1.53,1.29a38,38,0,0,0-2.79,2.65,12.42,12.42,0,0,0-1.94,2.57,2.33,2.33,0,0,0-.28.76c0,.11,0,0,0,.09a4.57,4.57,0,0,0,1.7,1.35,25.15,25.15,0,0,0,3.36,1.51c2.46.92,5.11,1.72,7.79,2.52,5.36,1.58,10.84,3.16,16.25,5q4.06,1.37,8.08,2.94c1.34.53,2.67,1.07,4,1.63.64.27,1.36.57,2.1.94a19.66,19.66,0,0,1,2.18,1.24,11.85,11.85,0,0,1,4,4.13,8.64,8.64,0,0,1,1,3.24,9.11,9.11,0,0,1-.27,3.23,14.48,14.48,0,0,1-2.42,4.85,29.32,29.32,0,0,1-3.14,3.56,87.46,87.46,0,0,1-14,10.47c-4.85,3-9.79,5.84-14.76,8.55-9.94,5.42-20,10.49-29.91,15.72-5,2.62-9.88,5.28-14.63,8.12-2.37,1.42-4.7,2.89-6.88,4.46a22.06,22.06,0,0,0-5.45,5.14,8,8,0,0,0-.76,1.39,5.36,5.36,0,0,0-.33,1.32,4.1,4.1,0,0,0,.69,2.53,15.62,15.62,0,0,0,5.49,4.62A80.14,80.14,0,0,0,298.56,353c5.31,1.66,10.73,3.06,16.18,4.58a64.81,64.81,0,0,1,8.26,2.74,27.74,27.74,0,0,1,7.69,4.74,13.65,13.65,0,0,1,3,3.81,9.27,9.27,0,0,1,1,5,11.14,11.14,0,0,1-1.54,4.7,19.09,19.09,0,0,1-2.8,3.67,40.6,40.6,0,0,1-6.81,5.54,83.78,83.78,0,0,1-7.41,4.35c-10.11,5.26-20.76,9.16-31.39,12.82a161.69,161.69,0,0,0-15.52,6.37A74.57,74.57,0,0,0,255,420a32.17,32.17,0,0,0-5.82,5.89,16.21,16.21,0,0,0-3.19,7.52,13.61,13.61,0,0,0,1.59,8A20.29,20.29,0,0,0,252.95,447.85Z"
@@ -130,312 +118,247 @@
 				</g>
 				<circle class="sparkle" fill="url(#dotGrad)" cx="0" cy="0" r="50" />
 			</g>
-		
+
 		</svg>
-<!--        <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
-            <div id="mobile-head">
-                <div id="mobile-head-title">对方正在输入中...</div>
-            </div>
-            <div id="mobile-body">
-                <div id="mobile-body-bg"></div>
-                <div id="mobile-body-content">
-                    <div id="mock-msg-row" class="msg-row">
-                        <div id="mock-msg" class="msg" v-html="latestMsgContent"></div>
-                    </div>
-                    <div class="msg-row"
-                        v-for="(msg, index) in messages"
-                        :key="index"
-                        :class="msg.author === 'author' ? 'msg-author' : 'msg-me'">
-                        <div class="msg"
-                            :class="'msg-bounce-in-' + (msg.author === 'author' ? 'left': 'right')"
-                            :style="msg.width && msg.height && {width: msg.width - 26 + 'px', height: msg.height - 18 + 'px'}"
-                            v-html="msg.content"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-foot">
-                <div id="prompt">
-                    <div id="prompt-head">
-                        <div class="say-something">说点什么……</div>
-                        <a href="javascript:;" class="close-btn"
-                            v-on:click="togglePrompt(false)"></a>
-                    </div>
-                    <div id="prompt-body">
-                        <ul class="responses" v-if="lastDialog">
-                            <li v-for="res in lastDialog.responses">
-                                <a href="javascript:;" v-on:click="respond(res)">{{ res.content }}</a>
-                            </li>
-                        </ul>
-                        <div class="next-topic"
-                            v-if="!lastDialog || !lastDialog.responses">
-                            <ul class="topics">
-                                <li v-for="topic in nextTopics">
-                                    <a href="javascript:;" v-on:click="ask(topic)">{{ topic.brief }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="input-hint" class="say-something"
-                    v-on:click="togglePrompt(true)"
-                    :class="{'clickable': !isTyping }">
-                    <span v-if="!isTyping">点下这个……</span>
-					
-                    <!-- <span v-if="isTyping">一头猪正在向你哼哼唧唧</span> 
-                </div>
-            </div>
-            <div id="prompt-bg" v-on:click="togglePrompt(false)"></div>
-        </div> -->
+	</body>
 
-       <!-- <div class="extra-link" id="meta-link">
-            <a class="letters" href="https://github.com/wongjohn/for-my-love" target="_blank">
-               Nov29ywL 
-            </a>
-        </div>
-		
-        <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
-        <script src="//cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>
+	<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin3.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/EasePack3.min.js"></script>
+	<script>
+		MorphSVGPlugin.convertToPath("polygon");
+		var xmlns = "http://www.w3.org/2000/svg",
+			xlinkns = "http://www.w3.org/1999/xlink",
+			select = function(s) {
+				return document.querySelector(s);
+			},
+			selectAll = function(s) {
+				return document.querySelectorAll(s);
+			},
+			pContainer = select(".pContainer"),
+			mainSVG = select(".mainSVG"),
+			star = select("#star"),
+			sparkle = select(".sparkle"),
+			tree = select("#tree"),
+			showParticle = true,
+			particleColorArray = [
+				"#E8F6F8",
+				"#ACE8F8",
+				"#F6FBFE",
+				"#A2CBDC",
+				"#B74551",
+				"#5DBA72",
+				"#910B28",
+				"#910B28",
+				"#446D39",
+			],
+			particleTypeArray = ["#star", "#circ", "#cross", "#heart"],
+			// particleTypeArray = ['#star'],
+			particlePool = [],
+			particleCount = 0,
+			numParticles = 201;
 
-        <script src="js/index-min.js"></script> -->
-		<!-- 圣诞树script -->
-		<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin3.min.js"></script>
-		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/EasePack3.min.js"></script>
-		<script>
-			MorphSVGPlugin.convertToPath("polygon");
-			var xmlns = "http://www.w3.org/2000/svg",
-				xlinkns = "http://www.w3.org/1999/xlink",
-				select = function(s) {
-					return document.querySelector(s);
-				},
-				selectAll = function(s) {
-					return document.querySelectorAll(s);
-				},
-				pContainer = select(".pContainer"),
-				mainSVG = select(".mainSVG"),
-				star = select("#star"),
-				sparkle = select(".sparkle"),
-				tree = select("#tree"),
-				showParticle = true,
-				particleColorArray = [
-					"#E8F6F8",
-					"#ACE8F8",
-					"#F6FBFE",
-					"#A2CBDC",
-					"#B74551",
-					"#5DBA72",
-					"#910B28",
-					"#910B28",
-					"#446D39",
-				],
-				particleTypeArray = ["#star", "#circ", "#cross", "#heart"],
-				// particleTypeArray = ['#star'],
-				particlePool = [],
-				particleCount = 0,
-				numParticles = 201;
-		
-			gsap.set("svg", {
-				visibility: "visible",
+		gsap.set("svg", {
+			visibility: "visible",
+		});
+
+		gsap.set(sparkle, {
+			transformOrigin: "50% 50%",
+			y: -100,
+		});
+
+		let getSVGPoints = (path) => {
+			let arr = [];
+			var rawPath = MotionPathPlugin.getRawPath(path)[0];
+			rawPath.forEach((el, value) => {
+				let obj = {};
+				obj.x = rawPath[value * 2];
+				obj.y = rawPath[value * 2 + 1];
+				if (value % 2) {
+					arr.push(obj);
+				}
 			});
-		
-			gsap.set(sparkle, {
-				transformOrigin: "50% 50%",
-				y: -100,
+			return arr;
+		};
+		let treePath = getSVGPoints(".treePath");
+		var treeBottomPath = getSVGPoints(".treeBottomPath");
+		var mainTl = gsap.timeline({
+				delay: 0,
+				repeat: 0
+			}),
+			starTl;
+
+		function flicker(p) {
+			gsap.killTweensOf(p, {
+				opacity: true
 			});
-		
-			let getSVGPoints = (path) => {
-				let arr = [];
-				var rawPath = MotionPathPlugin.getRawPath(path)[0];
-				rawPath.forEach((el, value) => {
-					let obj = {};
-					obj.x = rawPath[value * 2];
-					obj.y = rawPath[value * 2 + 1];
-					if (value % 2) {
-						arr.push(obj);
-					}
-				});
-				return arr;
-			};
-			let treePath = getSVGPoints(".treePath");
-			var treeBottomPath = getSVGPoints(".treeBottomPath");
-			var mainTl = gsap.timeline({
-					delay: 0,
-					repeat: 0
-				}),
-				starTl;
-		
-			function flicker(p) {
-				gsap.killTweensOf(p, {
-					opacity: true
-				});
-				gsap.fromTo(
-					p, {
-						opacity: 1,
-					}, {
-						duration: 0.07,
-						opacity: Math.random(),
-						repeat: -1,
-					}
+			gsap.fromTo(
+				p, {
+					opacity: 1,
+				}, {
+					duration: 0.07,
+					opacity: Math.random(),
+					repeat: -1,
+				}
+			);
+		}
+
+		function createParticles() {
+			var i = numParticles,
+				p,
+				particleTl,
+				step = numParticles / treePath.length,
+				pos;
+			while (--i > -1) {
+				p = select(particleTypeArray[i % particleTypeArray.length]).cloneNode(
+					true
 				);
-			}
-		
-			function createParticles() {
-				var i = numParticles,
-					p,
-					particleTl,
-					step = numParticles / treePath.length,
-					pos;
-				while (--i > -1) {
-					p = select(particleTypeArray[i % particleTypeArray.length]).cloneNode(
-						true
-					);
-					mainSVG.appendChild(p);
-					p.setAttribute(
-						"fill",
-						particleColorArray[i % particleColorArray.length]
-					);
-					p.setAttribute("class", "particle");
-					particlePool.push(p);
-					gsap.set(p, {
-						x: -100,
-						y: -100,
-						transformOrigin: "50% 50%",
-					});
-				}
-			}
-		
-			var getScale = gsap.utils.random(0.5, 3, 0.001, true);
-		
-			function playParticle(p) {
-				if (!showParticle) {
-					return;
-				}
-				var p = particlePool[particleCount];
+				mainSVG.appendChild(p);
+				p.setAttribute(
+					"fill",
+					particleColorArray[i % particleColorArray.length]
+				);
+				p.setAttribute("class", "particle");
+				particlePool.push(p);
 				gsap.set(p, {
-					x: gsap.getProperty(".pContainer", "x"),
-					y: gsap.getProperty(".pContainer", "y"),
-					scale: getScale(),
+					x: -100,
+					y: -100,
+					transformOrigin: "50% 50%",
 				});
-				var tl = gsap.timeline();
-				tl.to(p, {
-					duration: gsap.utils.random(0.61, 6),
-					physics2D: {
-						velocity: gsap.utils.random(-23, 23),
-						angle: gsap.utils.random(-180, 180),
-						gravity: gsap.utils.random(-6, 50),
-					},
-					scale: 0,
-					rotation: gsap.utils.random(-123, 360),
-					ease: "power1",
-					onStart: flicker,
-					onStartParams: [p],
-					//repeat:-1,
-					onRepeat: (p) => {
-						gsap.set(p, {
-							scale: getScale(),
-						});
-					},
-					onRepeatParams: [p],
-				});
-		
-				particleCount++;
-				particleCount = particleCount >= numParticles ? 0 : particleCount;
 			}
-		
-			function drawStar() {
-				starTl = gsap.timeline({
-					onUpdate: playParticle
-				});
-				starTl
-					.to(".pContainer, .sparkle", {
-						duration: 6,
+		}
+
+		var getScale = gsap.utils.random(0.5, 3, 0.001, true);
+
+		function playParticle(p) {
+			if (!showParticle) {
+				return;
+			}
+			var p = particlePool[particleCount];
+			gsap.set(p, {
+				x: gsap.getProperty(".pContainer", "x"),
+				y: gsap.getProperty(".pContainer", "y"),
+				scale: getScale(),
+			});
+			var tl = gsap.timeline();
+			tl.to(p, {
+				duration: gsap.utils.random(0.61, 6),
+				physics2D: {
+					velocity: gsap.utils.random(-23, 23),
+					angle: gsap.utils.random(-180, 180),
+					gravity: gsap.utils.random(-6, 50),
+				},
+				scale: 0,
+				rotation: gsap.utils.random(-123, 360),
+				ease: "power1",
+				onStart: flicker,
+				onStartParams: [p],
+				//repeat:-1,
+				onRepeat: (p) => {
+					gsap.set(p, {
+						scale: getScale(),
+					});
+				},
+				onRepeatParams: [p],
+			});
+
+			particleCount++;
+			particleCount = particleCount >= numParticles ? 0 : particleCount;
+		}
+
+		function drawStar() {
+			starTl = gsap.timeline({
+				onUpdate: playParticle
+			});
+			starTl
+				.to(".pContainer, .sparkle", {
+					duration: 6,
+					motionPath: {
+						path: ".treePath",
+						autoRotate: false,
+					},
+					ease: "linear",
+				})
+				.to(".pContainer, .sparkle", {
+					duration: 1,
+					onStart: function() {
+						showParticle = false;
+					},
+					x: treeBottomPath[0].x,
+					y: treeBottomPath[0].y,
+				})
+				.to(
+					".pContainer, .sparkle", {
+						duration: 2,
+						onStart: function() {
+							showParticle = true;
+						},
 						motionPath: {
-							path: ".treePath",
+							path: ".treeBottomPath",
 							autoRotate: false,
 						},
 						ease: "linear",
-					})
-					.to(".pContainer, .sparkle", {
-						duration: 1,
-						onStart: function() {
-							showParticle = false;
-						},
-						x: treeBottomPath[0].x,
-						y: treeBottomPath[0].y,
-					})
-					.to(
-						".pContainer, .sparkle", {
-							duration: 2,
-							onStart: function() {
-								showParticle = true;
-							},
-							motionPath: {
-								path: ".treeBottomPath",
-								autoRotate: false,
-							},
-							ease: "linear",
-						},
-						"-=0"
-					)
-					.from(
-						".treeBottomMask", {
-							duration: 2,
-							drawSVG: "0% 0%",
-							stroke: "#FFF",
-							ease: "linear",
-						},
-						"-=2"
-					);
-			}
-		
-			createParticles();
-			drawStar();
-			//ScrubGSAPTimeline(mainTl)
-		
-			mainTl
-				.from([".treePathMask", ".treePotMask"], {
-					duration: 6,
-					drawSVG: "0% 0%",
-					stroke: "#FFF",
-					stagger: {
-						each: 6,
-					},
-					duration: gsap.utils.wrap([6, 1, 2]),
-					ease: "linear",
-				})
-				.from(
-					".treeStar", {
-						duration: 3,
-						//skewY:270,
-						scaleY: 0,
-						scaleX: 0.15,
-						transformOrigin: "50% 50%",
-						ease: "elastic(1,0.5)",
-					},
-					"-=4"
-				)
-		
-				.to(
-					".sparkle", {
-						duration: 3,
-						opacity: 0,
-						ease: "rough({strength: 2, points: 100, template: linear, taper: both, randomize: true, clamp: false})",
 					},
 					"-=0"
 				)
-				.to(
-					".treeStarOutline", {
-						duration: 1,
-						opacity: 1,
-						ease: "rough({strength: 2, points: 16, template: linear, taper: none, randomize: true, clamp: false})",
+				.from(
+					".treeBottomMask", {
+						duration: 2,
+						drawSVG: "0% 0%",
+						stroke: "#FFF",
+						ease: "linear",
 					},
-					"+=1"
+					"-=2"
 				);
-			mainTl.add(starTl, 0);
-			gsap.globalTimeline.timeScale(1.5);
-		</script>
-    </body>
+		}
+
+		createParticles();
+		drawStar();
+		//ScrubGSAPTimeline(mainTl)
+
+		mainTl
+			.from([".treePathMask", ".treePotMask"], {
+				duration: 6,
+				drawSVG: "0% 0%",
+				stroke: "#FFF",
+				stagger: {
+					each: 6,
+				},
+				duration: gsap.utils.wrap([6, 1, 2]),
+				ease: "linear",
+			})
+			.from(
+				".treeStar", {
+					duration: 3,
+					//skewY:270,
+					scaleY: 0,
+					scaleX: 0.15,
+					transformOrigin: "50% 50%",
+					ease: "elastic(1,0.5)",
+				},
+				"-=4"
+			)
+
+			.to(
+				".sparkle", {
+					duration: 3,
+					opacity: 0,
+					ease: "rough({strength: 2, points: 100, template: linear, taper: both, randomize: true, clamp: false})",
+				},
+				"-=0"
+			)
+			.to(
+				".treeStarOutline", {
+					duration: 1,
+					opacity: 1,
+					ease: "rough({strength: 2, points: 16, template: linear, taper: none, randomize: true, clamp: false})",
+				},
+				"+=1"
+			);
+		mainTl.add(starTl, 0);
+		gsap.globalTimeline.timeScale(1.5);
+	</script>
 </html>
